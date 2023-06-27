@@ -26,8 +26,8 @@ void copyP2P(int gpu0, int gpu1, int* dA_0, int* dA_1, int size) {
 }
 
 
-int main(int argc, char *argv[])
-{
+int main(int argc, char *argv[]) {
+    
     // Check that we have at least two GPUs
     int devcount = omp_get_num_devices();
     if(devcount < 2) {
